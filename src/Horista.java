@@ -1,4 +1,4 @@
-public class Horista {
-    int horasTrabalhadas;
-    int horasExtras;
+public class Horista extends TipoDeEmpregado{
+    private int horasTrabalhadas;
+    private int horasExtras;
 }

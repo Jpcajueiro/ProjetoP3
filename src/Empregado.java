@@ -1,32 +1,75 @@
-
 public class Empregado {
     
-    String name;
-    String id;
-    String endereco;
-    TipoDeEmpregado tipoDeEmpregado;
-    CartaoDePonto cartaoDePonto;
-    Sindicato sindicato;
-    int metodoDePagamento;
+    private String name;
+    private String id;
+    private String endereco;
+    private TipoDeEmpregado tipoDeEmpregado;
+    private CartaoDePonto cartaoDePonto;
+    private Sindicato sindicato;
+    private int metodoDePagamento;
 
-    public Empregado(String name, String id,String endereco, TipoDeEmpregado tipoDeEmpregado, CartaoDePonto cartaoDePonto, Sindicato sindicato, int metodoDePagamento){
+    public void setName(String name) {
         this.name = name;
-        this.id = id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String getEndereco() {
+        return this.endereco;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return this.id;
+    }
+
+    public void setTipoDeEmpregado(TipoDeEmpregado tipoDeEmpregado) {
         this.tipoDeEmpregado = tipoDeEmpregado;
+    }
+
+    public TipoDeEmpregado getTipoDeEmpregado() {
+        return this.tipoDeEmpregado;
+    }
+    
+    public void setCartaoDePonto(CartaoDePonto cartaoDePonto) {
         this.cartaoDePonto = cartaoDePonto;
-        this.sindicato = sindicato;
+    }
+    
+    public CartaoDePonto getCartaoDePonto() {
+        return this.cartaoDePonto;
+    }
+
+    public void setMetodoDePagamento(int metodoDePagamento) {
         this.metodoDePagamento = metodoDePagamento;
     }
 
-    public String printEmpregadoInfo(Empregado empregado){
-        return "Nome: " + empregado.name +
+    public int getMetodoDePagamento() {
+        return this.metodoDePagamento;
+    }
+    
+    public void setSindicato(Sindicato sindicato) {
+        this.sindicato = sindicato;
+    }
+
+    public Sindicato getSindicato() {
+        return this.sindicato;
+    }
+
+    public String printEmpregadoInfo(){
+        return "Nome: " + this.name +
         "\n---------------------\n"+
-        "Endereço:" + empregado.endereco +
+        "Endereço:" + this.endereco +
         "\n---------------------\n"+
-        "ID:" + empregado.id +
-        "\n---------------------\n"+
-        "Tipo de empregado:" + tipoDeEmpregado+
+        "ID:" + this.id +
         "\n---------------------\n";
     }
 }

@@ -1,3 +1,4 @@
-public class EmConta {
-    
+public class EmConta extends MetodoDePagamento{
+    private String banco;
+    private String conta;
 }

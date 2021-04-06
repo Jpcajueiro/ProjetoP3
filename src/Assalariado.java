@@ -1,3 +1,3 @@
-public class Assalariado {
-    Double salario;
+public class Assalariado extends TipoDeEmpregado{
+    private Double salario;
 }

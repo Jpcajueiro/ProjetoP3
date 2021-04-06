@@ -1,8 +1,8 @@
 import java.time.LocalDate;
 
-public class Vendas {
-    Double percentualDeVendas;
-    LocalDate dataVenda;
-    Double valor;
-    Double comissao;
+public class Vendas extends Comissionado{
+    private Double percentualDeVendas;
+    private LocalDate dataVenda;
+    private Double valor;
+    private Double comissao;
 }

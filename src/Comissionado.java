@@ -1,4 +1,4 @@
-public class Comissionado {
-    Double salario;
-    Vendas vendas;
+public class Comissionado extends TipoDeEmpregado{
+    private Double salario;
+    private Vendas vendas;
 }

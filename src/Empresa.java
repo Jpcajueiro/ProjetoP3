@@ -1,3 +1,3 @@
 public class Empresa {
-    String nomeEmpresa;
+    private String nomeEmpresa;
 }

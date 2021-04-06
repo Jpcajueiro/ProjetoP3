@@ -1,4 +1,4 @@
-public class Sindicato {
-    Double taxaMensal;
-    Double taxaOcasional;
+public class Sindicato extends Empregado{
+    private Double taxaMensal;
+    private Double taxaOcasional;
 }
